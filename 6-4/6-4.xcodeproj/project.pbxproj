@@ -13,6 +13,7 @@
 		E726E99B1B3767560016C82B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E726E99A1B3767560016C82B /* Images.xcassets */; };
 		E726E99E1B3767560016C82B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E726E99C1B3767560016C82B /* LaunchScreen.xib */; };
 		E726E9AA1B3767560016C82B /* __4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E726E9A91B3767560016C82B /* __4Tests.swift */; };
+		E726E9B41B37A6380016C82B /* twitter_images in Resources */ = {isa = PBXBuildFile; fileRef = E726E9B31B37A6380016C82B /* twitter_images */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		E726E9A31B3767560016C82B /* 6-4Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "6-4Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E726E9A81B3767560016C82B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E726E9A91B3767560016C82B /* __4Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = __4Tests.swift; sourceTree = "<group>"; };
+		E726E9B31B37A6380016C82B /* twitter_images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = twitter_images; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				E726E9931B3767560016C82B /* AppDelegate.swift */,
 				E726E9951B3767560016C82B /* ViewController.swift */,
 				E726E9971B3767560016C82B /* Main.storyboard */,
+				E726E9B31B37A6380016C82B /* twitter_images */,
 				E726E99A1B3767560016C82B /* Images.xcassets */,
 				E726E99C1B3767560016C82B /* LaunchScreen.xib */,
 				E726E9911B3767560016C82B /* Supporting Files */,
@@ -194,6 +197,7 @@
 			files = (
 				E726E9991B3767560016C82B /* Main.storyboard in Resources */,
 				E726E99E1B3767560016C82B /* LaunchScreen.xib in Resources */,
+				E726E9B41B37A6380016C82B /* twitter_images in Resources */,
 				E726E99B1B3767560016C82B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
