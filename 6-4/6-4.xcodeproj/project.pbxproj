@@ -13,7 +13,10 @@
 		E726E99B1B3767560016C82B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E726E99A1B3767560016C82B /* Images.xcassets */; };
 		E726E99E1B3767560016C82B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E726E99C1B3767560016C82B /* LaunchScreen.xib */; };
 		E726E9AA1B3767560016C82B /* __4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E726E9A91B3767560016C82B /* __4Tests.swift */; };
-		E726E9B41B37A6380016C82B /* twitter_images in Resources */ = {isa = PBXBuildFile; fileRef = E726E9B31B37A6380016C82B /* twitter_images */; };
+		E726E9BA1B398DCA0016C82B /* cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = E726E9B61B398DCA0016C82B /* cancel.png */; };
+		E726E9BB1B398DCA0016C82B /* header.png in Resources */ = {isa = PBXBuildFile; fileRef = E726E9B71B398DCA0016C82B /* header.png */; };
+		E726E9BC1B398DCA0016C82B /* pencil@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E726E9B81B398DCA0016C82B /* pencil@2x.png */; };
+		E726E9BD1B398DCA0016C82B /* pug.png in Resources */ = {isa = PBXBuildFile; fileRef = E726E9B91B398DCA0016C82B /* pug.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +40,10 @@
 		E726E9A31B3767560016C82B /* 6-4Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "6-4Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E726E9A81B3767560016C82B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E726E9A91B3767560016C82B /* __4Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = __4Tests.swift; sourceTree = "<group>"; };
-		E726E9B31B37A6380016C82B /* twitter_images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = twitter_images; sourceTree = "<group>"; };
+		E726E9B61B398DCA0016C82B /* cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cancel.png; sourceTree = "<group>"; };
+		E726E9B71B398DCA0016C82B /* header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header.png; sourceTree = "<group>"; };
+		E726E9B81B398DCA0016C82B /* pencil@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pencil@2x.png"; sourceTree = "<group>"; };
+		E726E9B91B398DCA0016C82B /* pug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pug.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,7 @@
 				E726E9901B3767560016C82B /* 6-4 */,
 				E726E9A61B3767560016C82B /* 6-4Tests */,
 				E726E98F1B3767560016C82B /* Products */,
+				E726E9B51B398DCA0016C82B /* twitter_images 2 */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,7 +89,6 @@
 				E726E9931B3767560016C82B /* AppDelegate.swift */,
 				E726E9951B3767560016C82B /* ViewController.swift */,
 				E726E9971B3767560016C82B /* Main.storyboard */,
-				E726E9B31B37A6380016C82B /* twitter_images */,
 				E726E99A1B3767560016C82B /* Images.xcassets */,
 				E726E99C1B3767560016C82B /* LaunchScreen.xib */,
 				E726E9911B3767560016C82B /* Supporting Files */,
@@ -113,6 +119,17 @@
 				E726E9A81B3767560016C82B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E726E9B51B398DCA0016C82B /* twitter_images 2 */ = {
+			isa = PBXGroup;
+			children = (
+				E726E9B61B398DCA0016C82B /* cancel.png */,
+				E726E9B71B398DCA0016C82B /* header.png */,
+				E726E9B81B398DCA0016C82B /* pencil@2x.png */,
+				E726E9B91B398DCA0016C82B /* pug.png */,
+			);
+			path = "twitter_images 2";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,9 +212,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E726E9BC1B398DCA0016C82B /* pencil@2x.png in Resources */,
+				E726E9BB1B398DCA0016C82B /* header.png in Resources */,
 				E726E9991B3767560016C82B /* Main.storyboard in Resources */,
 				E726E99E1B3767560016C82B /* LaunchScreen.xib in Resources */,
-				E726E9B41B37A6380016C82B /* twitter_images in Resources */,
+				E726E9BA1B398DCA0016C82B /* cancel.png in Resources */,
+				E726E9BD1B398DCA0016C82B /* pug.png in Resources */,
 				E726E99B1B3767560016C82B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
