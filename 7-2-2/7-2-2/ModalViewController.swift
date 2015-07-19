@@ -20,6 +20,14 @@ class ModalViewController: UIViewController {
         label.sizeToFit()
         label.center = self.view.center
         self.view.addSubview(label)
+        
+        let button = UIButton()
+        button.setTitle("hide Modal", forState: UIControlState.Normal)
+        button.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
+        button.sizeToFit()
+        button.center = CGPoint(x: self.view.center.x, y: label.frame.maxY + 60)
+        button.addTarget(self, action: "didTouchButton:", forControlEvents: UIControlEvents.TouchUpInside)
+        self.view.addSubview(button)
 
         // Do any additional setup after loading the view.
     }
@@ -29,6 +37,10 @@ class ModalViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func didTouchButton(sender: UIButton) {
+        self.dismissViewControllerAnimated(true, completion: { () -> Void in
+        })
+    }
 
     /*
     // MARK: - Navigation

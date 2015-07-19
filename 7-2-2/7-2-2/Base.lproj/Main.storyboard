@@ -10,7 +10,7 @@
                 <viewController storyboardIdentifier="MainViewController" title="MainViewController" id="vXZ-lx-hvc" customClass="ViewController" customModule="__2_2" customModuleProvider="target" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <segue destination="EqD-9S-B3f" kind="presentation" id="m20-i2-R80"/>
+                        <segue destination="EqD-9S-B3f" kind="presentation" identifier="ModalSegue" id="m20-i2-R80"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

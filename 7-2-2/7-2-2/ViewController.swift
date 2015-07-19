@@ -20,6 +20,7 @@ class ViewController: UIViewController {
         label.font = UIFont(name: "HiraKakuProN-W6", size: 20)
         label.sizeToFit()
         label.center = self.view.center
+        
         self.view.addSubview(label)
         
         let button = UIButton()
@@ -27,12 +28,17 @@ class ViewController: UIViewController {
         button.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
         button.sizeToFit()
         button.center = CGPoint(x: self.view.center.x, y: label.frame.maxY + 30)
+        button.addTarget(self, action: "didTouchButton:", forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(button)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func didTouchButton(sender: UIButton) {
+        self.performSegueWithIdentifier("ModalSegue", sender: self)
     }
 
 
