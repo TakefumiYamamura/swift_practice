@@ -9,7 +9,7 @@
 import UIKit
 
 class TodoListTableTableViewController: UITableViewController {
-    var todos:[ToDo] = []
+    var todos:[Todo] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()

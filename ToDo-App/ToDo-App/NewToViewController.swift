@@ -11,8 +11,8 @@ import UIKit
 class NewToViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var todoField: UITextField!
     @IBOutlet weak var descriptionView: UITextView!
-
     @IBOutlet weak var prioritySegment: UISegmentedControl!
+    var todo: Todo!
     override func viewDidLoad() {
         super.viewDidLoad()
         descriptionView.layer.cornerRadius = 3
@@ -42,7 +42,17 @@ class NewToViewController: UIViewController, UITextFieldDelegate {
     }
     
     func save() {
-        self.dismissViewControllerAnimated(true, completion: nil)
+        if todoField.text.isEmpty {
+            let alertView = UIAlertController(title: "エラー", message: "Todoが記述されていません", preferredStyle: UIAlertControllerStyle.Alert)
+            alertView.addAction(UIAlertAction(title: "はい", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(alertView, animated: true, completion: nil)
+        } else {
+            let todo = Todo()
+            todo.title = todoField.text
+            todo.descript = descriptionView.text
+            todo.priority = TodoPriority(rawValue: prioritySegment.selectedSegmentIndex)!
+            self.dismissViewControllerAnimated(true, completion: nil)
+        }
     }
     
     func tapGesture(sender: UITapGestureRecognizer) {

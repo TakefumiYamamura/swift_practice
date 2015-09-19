@@ -9,10 +9,10 @@
 import UIKit
 
 class TodoController: NSObject {
-    class func fetchTodos() -> Array<ToDo> {
-        var todos:[ToDo] = []
+    class func fetchTodos() -> Array<Todo> {
+        var todos:[Todo] = []
         for (var i = 1; i < 8; i++) {
-            var todo = ToDo()
+            var todo = Todo()
             todo.title = "Todo\(i)"
             todos.append(todo)
         }
