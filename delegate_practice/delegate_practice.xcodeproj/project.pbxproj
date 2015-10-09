@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E74A18921BC6838C00516E56 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74A18911BC6838C00516E56 /* ModalViewController.swift */; };
 		E7FB01C61BC11A5900CEB3B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FB01C51BC11A5900CEB3B1 /* AppDelegate.swift */; };
 		E7FB01C81BC11A5900CEB3B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FB01C71BC11A5900CEB3B1 /* ViewController.swift */; };
 		E7FB01CB1BC11A5900CEB3B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7FB01C91BC11A5900CEB3B1 /* Main.storyboard */; };
 		E7FB01CD1BC11A5900CEB3B1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7FB01CC1BC11A5900CEB3B1 /* Images.xcassets */; };
 		E7FB01D01BC11A5900CEB3B1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7FB01CE1BC11A5900CEB3B1 /* LaunchScreen.xib */; };
 		E7FB01DC1BC11A5900CEB3B1 /* delegate_practiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FB01DB1BC11A5900CEB3B1 /* delegate_practiceTests.swift */; };
+		E7FB01E61BC11DEE00CEB3B1 /* modal_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FB01E51BC11DEE00CEB3B1 /* modal_view.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E74A18911BC6838C00516E56 /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 		E7FB01C01BC11A5900CEB3B1 /* delegate_practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = delegate_practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7FB01C41BC11A5900CEB3B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7FB01C51BC11A5900CEB3B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 		E7FB01D51BC11A5900CEB3B1 /* delegate_practiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = delegate_practiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7FB01DA1BC11A5900CEB3B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7FB01DB1BC11A5900CEB3B1 /* delegate_practiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = delegate_practiceTests.swift; sourceTree = "<group>"; };
+		E7FB01E51BC11DEE00CEB3B1 /* modal_view.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = modal_view.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +83,9 @@
 			children = (
 				E7FB01C51BC11A5900CEB3B1 /* AppDelegate.swift */,
 				E7FB01C71BC11A5900CEB3B1 /* ViewController.swift */,
+				E7FB01E51BC11DEE00CEB3B1 /* modal_view.swift */,
 				E7FB01C91BC11A5900CEB3B1 /* Main.storyboard */,
+				E74A18911BC6838C00516E56 /* ModalViewController.swift */,
 				E7FB01CC1BC11A5900CEB3B1 /* Images.xcassets */,
 				E7FB01CE1BC11A5900CEB3B1 /* LaunchScreen.xib */,
 				E7FB01C31BC11A5900CEB3B1 /* Supporting Files */,
@@ -212,6 +218,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E74A18921BC6838C00516E56 /* ModalViewController.swift in Sources */,
+				E7FB01E61BC11DEE00CEB3B1 /* modal_view.swift in Sources */,
 				E7FB01C81BC11A5900CEB3B1 /* ViewController.swift in Sources */,
 				E7FB01C61BC11A5900CEB3B1 /* AppDelegate.swift in Sources */,
 			);
@@ -409,6 +417,7 @@
 				E7FB01E11BC11A5900CEB3B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E7FB01E21BC11A5900CEB3B1 /* Build configuration list for PBXNativeTarget "delegate_practiceTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +426,7 @@
 				E7FB01E41BC11A5900CEB3B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

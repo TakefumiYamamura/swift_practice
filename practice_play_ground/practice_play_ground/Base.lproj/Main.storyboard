@@ -1,25 +1,61 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="practice_play_ground" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="Tgf-Yi-Ys0"/>
+                        <viewControllerLayoutGuide type="bottom" id="2su-Ia-MTR"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="E7W-k0-8dD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Qf-pU-OZa">
+                                <rect key="frame" x="147" y="294" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.26745960528325874" green="0.28147484223294306" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="7v9-JA-LT5"/>
+                                    <constraint firstAttribute="width" constant="80" id="PCZ-IW-XvP"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qbr-pG-DgW">
+                                <rect key="frame" x="0.0" y="647" width="375" height="20"/>
+                                <color key="backgroundColor" red="1" green="0.25506820006438202" blue="0.22608583067030663" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="CYv-RV-U6B"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="leb-Wn-aIL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.88371603446910452" blue="0.24642537735560888" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="adl-t7-vfJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="7Qf-pU-OZa" secondAttribute="centerY" id="QhY-u0-aHo"/>
+                            <constraint firstItem="Qbr-pG-DgW" firstAttribute="leading" secondItem="E7W-k0-8dD" secondAttribute="leading" id="QzJ-5n-9eX"/>
+                            <constraint firstItem="leb-Wn-aIL" firstAttribute="top" secondItem="E7W-k0-8dD" secondAttribute="top" id="S6O-Vh-jz5"/>
+                            <constraint firstAttribute="trailing" secondItem="Qbr-pG-DgW" secondAttribute="trailing" id="Xuo-jl-aHO"/>
+                            <constraint firstAttribute="trailing" secondItem="leb-Wn-aIL" secondAttribute="trailing" id="eQ3-5f-NeJ"/>
+                            <constraint firstItem="leb-Wn-aIL" firstAttribute="leading" secondItem="E7W-k0-8dD" secondAttribute="leading" id="hh4-ic-Jab"/>
+                            <constraint firstItem="2su-Ia-MTR" firstAttribute="top" secondItem="Qbr-pG-DgW" secondAttribute="bottom" id="rhJ-eW-Ohn"/>
+                            <constraint firstAttribute="centerX" secondItem="7Qf-pU-OZa" secondAttribute="centerX" id="tBb-MJ-gQ4"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="364.5" y="349.5"/>
         </scene>
     </scenes>
 </document>

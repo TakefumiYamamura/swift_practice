@@ -13,6 +13,7 @@
 		E7FB00B51BC0A55900CEB3B1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7FB00B41BC0A55900CEB3B1 /* Images.xcassets */; };
 		E7FB00B81BC0A55900CEB3B1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7FB00B61BC0A55900CEB3B1 /* LaunchScreen.xib */; };
 		E7FB00C41BC0A55900CEB3B1 /* YAMAMURA_Mentor_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FB00C31BC0A55900CEB3B1 /* YAMAMURA_Mentor_TestTests.swift */; };
+		E7FB00FC1BC0B1DC00CEB3B1 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FB00FB1BC0B1DC00CEB3B1 /* ModalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		E7FB00BD1BC0A55900CEB3B1 /* YAMAMURA_Mentor_TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YAMAMURA_Mentor_TestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7FB00C21BC0A55900CEB3B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7FB00C31BC0A55900CEB3B1 /* YAMAMURA_Mentor_TestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YAMAMURA_Mentor_TestTests.swift; sourceTree = "<group>"; };
+		E7FB00FB1BC0B1DC00CEB3B1 /* ModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				E7FB00AD1BC0A55900CEB3B1 /* AppDelegate.swift */,
 				E7FB00AF1BC0A55900CEB3B1 /* ViewController.swift */,
+				E7FB00FB1BC0B1DC00CEB3B1 /* ModalView.swift */,
 				E7FB00B11BC0A55900CEB3B1 /* Main.storyboard */,
 				E7FB00B41BC0A55900CEB3B1 /* Images.xcassets */,
 				E7FB00B61BC0A55900CEB3B1 /* LaunchScreen.xib */,
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7FB00FC1BC0B1DC00CEB3B1 /* ModalView.swift in Sources */,
 				E7FB00B01BC0A55900CEB3B1 /* ViewController.swift in Sources */,
 				E7FB00AE1BC0A55900CEB3B1 /* AppDelegate.swift in Sources */,
 			);

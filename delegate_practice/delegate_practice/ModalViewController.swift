@@ -12,6 +12,15 @@ class ModalViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor.orangeColor()
+        let backbtn = UIButton()
+        backbtn.setTitle("戻る", forState: UIControlState.Normal)
+        backbtn.center = view.center
+        backbtn.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
+        backbtn.sizeToFit()
+        backbtn.addTarget(self, action: "returnTop:", forControlEvents: UIControlEvents.TouchUpInside)
+//        backbtn.frame.size = CGSize(width: self.view.frame.width, height: self.view.frame.height)
+        self.view.addSubview(backbtn)
 
         // Do any additional setup after loading the view.
     }
@@ -21,6 +30,10 @@ class ModalViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func returnTop(sender: UIButton){
+        self.dismissViewControllerAnimated(true, completion: { () -> Void in
+        })
+    }
 
     /*
     // MARK: - Navigation

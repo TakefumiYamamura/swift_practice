@@ -12,6 +12,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let label = UILabel(frame: CGRect(x: self.view.center.x, y: self.view.center.y, width: 100, height: 50))
+        label.text = "Modal"
+        label.textColor = UIColor.whiteColor()
+        self.view.addSubview(label)
         // Do any additional setup after loading the view, typically from a nib.
     }
 

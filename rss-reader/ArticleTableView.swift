@@ -9,6 +9,16 @@
 import UIKit
 
 class ArticleTableView: UITableView {
+    
+    //ソースコードでインスタンスを生成時に初期化
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+    
+    //Interface Builderでインスタンス生成時に初期化
+    required init(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
     /*
     // Only override drawRect: if you perform custom drawing.

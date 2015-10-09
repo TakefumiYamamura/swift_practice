@@ -1,18 +1,81 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ArticleTableViewCell" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="141" id="KGk-i7-Jjw" customClass="ArticleTableViewCell" customModule="rss_reader" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="313" height="141"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="スターウォーズの最新ロボット" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wvw-43-KiT">
+                        <rect key="frame" x="13" y="16" width="287" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="5Z3-4C-66U"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="映画スターウォーズ/フォースの覚醒の予告" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opt-vD-Z6n">
+                        <rect key="frame" x="13" y="34" width="287" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="04j-8l-yYo"/>
+                            <constraint firstAttribute="height" constant="35" id="10w-Uc-JKe"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="14"/>
+                        <color key="textColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="04j-8l-yYo"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2015//11/21" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RCZ-1R-Dg6">
+                        <rect key="frame" x="211" y="98" width="94" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="19" id="gX8-dx-DMO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="RCZ-1R-Dg6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="2Dw-wv-jZN"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="opt-vD-Z6n" secondAttribute="trailing" constant="5" id="2k9-vA-GaF"/>
+                    <constraint firstItem="wvw-43-KiT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="30x-H1-Aih"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="wvw-43-KiT" secondAttribute="trailing" constant="5" id="CRg-LE-yby"/>
+                    <constraint firstItem="wvw-43-KiT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="DMU-Bk-yk4"/>
+                    <constraint firstAttribute="trailing" secondItem="RCZ-1R-Dg6" secondAttribute="trailing" constant="5" id="Hm9-cR-Nia"/>
+                    <constraint firstItem="opt-vD-Z6n" firstAttribute="top" secondItem="wvw-43-KiT" secondAttribute="bottom" id="TX6-nA-1PP"/>
+                    <constraint firstItem="opt-vD-Z6n" firstAttribute="top" secondItem="wvw-43-KiT" secondAttribute="bottom" id="b8q-03-xhQ"/>
+                    <constraint firstItem="RCZ-1R-Dg6" firstAttribute="leading" secondItem="opt-vD-Z6n" secondAttribute="trailing" constant="75" id="gRo-yJ-Tf4"/>
+                    <constraint firstItem="opt-vD-Z6n" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="ir5-0r-Ppl"/>
+                    <constraint firstAttribute="bottom" secondItem="RCZ-1R-Dg6" secondAttribute="bottom" constant="21" id="rgx-AV-mrP"/>
+                    <constraint firstItem="opt-vD-Z6n" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="zeT-Wg-L1B"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="TX6-nA-1PP"/>
+                        <exclude reference="ir5-0r-Ppl"/>
+                        <exclude reference="gRo-yJ-Tf4"/>
+                    </mask>
+                </variation>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="date" destination="RCZ-1R-Dg6" id="T8I-Zz-REh"/>
+                <outlet property="descript" destination="opt-vD-Z6n" id="0md-sW-XSA"/>
+                <outlet property="title" destination="wvw-43-KiT" id="Zpb-Wv-Ozb"/>
+            </connections>
+            <point key="canvasLocation" x="238.5" y="391.5"/>
         </tableViewCell>
     </objects>
 </document>
