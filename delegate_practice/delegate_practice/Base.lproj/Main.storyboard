@@ -1,9 +1,51 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bOO-5C-jX9">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
+        <!--二番目のviewだよ-->
+        <scene sceneID="CJu-Js-HD8">
+            <objects>
+                <viewController title="二番目のviewだよ" id="qWP-Yy-bjf" customClass="NextViewController" customModule="delegate_practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XMe-aW-FMy"/>
+                        <viewControllerLayoutGuide type="bottom" id="eD6-rt-tse"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rfj-gy-cyi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.29925558456388002" blue="0.25835142837257097" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d6z-xn-6Jw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="449.5" y="-532.5"/>
+        </scene>
+        <!--一番目！-->
+        <scene sceneID="OFu-id-G9j">
+            <objects>
+                <viewController title="一番目！" id="6dk-lW-OOp" customClass="NavigationViewController" customModule="delegate_practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fsE-T4-Bah"/>
+                        <viewControllerLayoutGuide type="bottom" id="XG5-fW-cx7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cuK-XD-5eX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0jE-c1-rTE"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="qWP-Yy-bjf" kind="show" identifier="next" id="MR5-Aq-DCv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2L1-wg-wov" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="427.5" y="199.5"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
@@ -39,7 +81,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.5" y="313.5"/>
+            <point key="canvasLocation" x="948.5" y="313.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="UYo-xB-1wR">
@@ -93,7 +135,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="36o-00-CRe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="606.5" y="137.5"/>
+            <point key="canvasLocation" x="1418.5" y="137.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9x1-qy-5cx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bOO-5C-jX9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SVc-Ol-gOi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6dk-lW-OOp" kind="relationship" relationship="rootViewController" id="BYZ-ol-ne3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bsh-L6-b1L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-293.5" y="212.5"/>
         </scene>
     </scenes>
 </document>

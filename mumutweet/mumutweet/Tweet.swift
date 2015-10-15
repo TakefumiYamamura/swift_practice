@@ -8,6 +8,15 @@
 
 import UIKit
 
+enum Priority: Int {
+    case low = 0
+    case middle = 1
+    case high = 2
+}
+
 class Tweet: NSObject {
+    var image_url = ""
+    var text = ""
+    var priority:Priority = .low
    
 }

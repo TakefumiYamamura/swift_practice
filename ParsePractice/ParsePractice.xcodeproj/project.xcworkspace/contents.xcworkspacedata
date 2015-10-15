@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../TweetTableViewCell.swift">
+   </FileRef>
+   <FileRef
+      location = "group:../TweetTableViewCell.xib">
+   </FileRef>
+   <FileRef
       location = "self:ParsePractice.xcodeproj">
    </FileRef>
 </Workspace>

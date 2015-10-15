@@ -12,6 +12,7 @@ class NextViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController!.navigationBar.barTintColor = UIColor.blackColor()
 
         // Do any additional setup after loading the view.
     }

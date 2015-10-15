@@ -12,6 +12,14 @@ class SecondViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor(red: 255, green: 213, blue: 0, alpha: 1.0)
+        let label = UILabel()
+        label.text = "second"
+        label.textColor = UIColor.whiteColor()
+        label.font = UIFont(name: "Helvetica Bold 24.0", size: 15)
+        label.center = view.center
+        label.frame.size = CGSize(width: view.frame.width, height: 30)
+        view.addSubview(label)
 
         // Do any additional setup after loading the view.
     }

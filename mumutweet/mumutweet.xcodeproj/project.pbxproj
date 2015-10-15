@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E70EDF751BCEB43700F8690D /* NewTweetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70EDF741BCEB43700F8690D /* NewTweetViewController.swift */; };
+		E72C085E1BCE508D00B3C56E /* TweetsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72C085D1BCE508D00B3C56E /* TweetsTableViewController.swift */; };
+		E72C08631BCE7B6200B3C56E /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72C08621BCE7B6200B3C56E /* Tweet.swift */; };
+		E72C08651BCE83F600B3C56E /* TweetsCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72C08641BCE83F600B3C56E /* TweetsCollection.swift */; };
 		E7C821221BCE46C300109F30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C821211BCE46C300109F30 /* AppDelegate.swift */; };
-		E7C821241BCE46C300109F30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C821231BCE46C300109F30 /* ViewController.swift */; };
 		E7C821271BCE46C300109F30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7C821251BCE46C300109F30 /* Main.storyboard */; };
 		E7C821291BCE46C300109F30 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7C821281BCE46C300109F30 /* Images.xcassets */; };
 		E7C8212C1BCE46C300109F30 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7C8212A1BCE46C300109F30 /* LaunchScreen.xib */; };
@@ -26,10 +29,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E70EDF741BCEB43700F8690D /* NewTweetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTweetViewController.swift; sourceTree = "<group>"; };
+		E72C085D1BCE508D00B3C56E /* TweetsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetsTableViewController.swift; sourceTree = "<group>"; };
+		E72C08621BCE7B6200B3C56E /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		E72C08641BCE83F600B3C56E /* TweetsCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetsCollection.swift; sourceTree = "<group>"; };
 		E7C8211C1BCE46C300109F30 /* mumutweet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mumutweet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7C821201BCE46C300109F30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7C821211BCE46C300109F30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E7C821231BCE46C300109F30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E7C821261BCE46C300109F30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E7C821281BCE46C300109F30 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E7C8212B1BCE46C300109F30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -56,6 +62,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E72C085F1BCE7AF400B3C56E /* model */ = {
+			isa = PBXGroup;
+			children = (
+				E72C08621BCE7B6200B3C56E /* Tweet.swift */,
+				E72C08641BCE83F600B3C56E /* TweetsCollection.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		E72C08601BCE7AFF00B3C56E /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		E72C08611BCE7B1400B3C56E /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				E72C085D1BCE508D00B3C56E /* TweetsTableViewController.swift */,
+				E70EDF741BCEB43700F8690D /* NewTweetViewController.swift */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
 		E7C821131BCE46C300109F30 = {
 			isa = PBXGroup;
 			children = (
@@ -77,9 +108,11 @@
 		E7C8211E1BCE46C300109F30 /* mumutweet */ = {
 			isa = PBXGroup;
 			children = (
+				E72C08611BCE7B1400B3C56E /* controller */,
+				E72C085F1BCE7AF400B3C56E /* model */,
 				E7C821211BCE46C300109F30 /* AppDelegate.swift */,
-				E7C821231BCE46C300109F30 /* ViewController.swift */,
 				E7C821251BCE46C300109F30 /* Main.storyboard */,
+				E72C08601BCE7AFF00B3C56E /* view */,
 				E7C821281BCE46C300109F30 /* Images.xcassets */,
 				E7C8212A1BCE46C300109F30 /* LaunchScreen.xib */,
 				E7C8211F1BCE46C300109F30 /* Supporting Files */,
@@ -212,8 +245,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7C821241BCE46C300109F30 /* ViewController.swift in Sources */,
+				E72C08631BCE7B6200B3C56E /* Tweet.swift in Sources */,
+				E72C08651BCE83F600B3C56E /* TweetsCollection.swift in Sources */,
 				E7C821221BCE46C300109F30 /* AppDelegate.swift in Sources */,
+				E72C085E1BCE508D00B3C56E /* TweetsTableViewController.swift in Sources */,
+				E70EDF751BCEB43700F8690D /* NewTweetViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +445,7 @@
 				E7C8213D1BCE46C300109F30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E7C8213E1BCE46C300109F30 /* Build configuration list for PBXNativeTarget "mumutweetTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +454,7 @@
 				E7C821401BCE46C300109F30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

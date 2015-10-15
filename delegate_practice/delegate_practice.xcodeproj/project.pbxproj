@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		E74A18921BC6838C00516E56 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74A18911BC6838C00516E56 /* ModalViewController.swift */; };
+		E74A18941BC79DDE00516E56 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74A18931BC79DDE00516E56 /* NavigationViewController.swift */; };
+		E74A18961BC8D04200516E56 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74A18951BC8D04200516E56 /* NextViewController.swift */; };
 		E7FB01C61BC11A5900CEB3B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FB01C51BC11A5900CEB3B1 /* AppDelegate.swift */; };
 		E7FB01C81BC11A5900CEB3B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FB01C71BC11A5900CEB3B1 /* ViewController.swift */; };
 		E7FB01CB1BC11A5900CEB3B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7FB01C91BC11A5900CEB3B1 /* Main.storyboard */; };
@@ -29,6 +31,8 @@
 
 /* Begin PBXFileReference section */
 		E74A18911BC6838C00516E56 /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		E74A18931BC79DDE00516E56 /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		E74A18951BC8D04200516E56 /* NextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 		E7FB01C01BC11A5900CEB3B1 /* delegate_practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = delegate_practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7FB01C41BC11A5900CEB3B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7FB01C51BC11A5900CEB3B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +87,8 @@
 			children = (
 				E7FB01C51BC11A5900CEB3B1 /* AppDelegate.swift */,
 				E7FB01C71BC11A5900CEB3B1 /* ViewController.swift */,
+				E74A18931BC79DDE00516E56 /* NavigationViewController.swift */,
+				E74A18951BC8D04200516E56 /* NextViewController.swift */,
 				E7FB01E51BC11DEE00CEB3B1 /* modal_view.swift */,
 				E7FB01C91BC11A5900CEB3B1 /* Main.storyboard */,
 				E74A18911BC6838C00516E56 /* ModalViewController.swift */,
@@ -219,8 +225,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E74A18921BC6838C00516E56 /* ModalViewController.swift in Sources */,
+				E74A18961BC8D04200516E56 /* NextViewController.swift in Sources */,
 				E7FB01E61BC11DEE00CEB3B1 /* modal_view.swift in Sources */,
 				E7FB01C81BC11A5900CEB3B1 /* ViewController.swift in Sources */,
+				E74A18941BC79DDE00516E56 /* NavigationViewController.swift in Sources */,
 				E7FB01C61BC11A5900CEB3B1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

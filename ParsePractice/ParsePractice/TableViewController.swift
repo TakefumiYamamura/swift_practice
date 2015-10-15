@@ -41,7 +41,7 @@ class TableViewController: UITableViewController {
 
     /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as! http://ddmarket.jp/pc/usr/sendMail.asp?otid=nU8k5GPWgv20151010201045&t=r&M_MAIL_SEQ=159881UITableViewCell
 
         // Configure the cell...
 
